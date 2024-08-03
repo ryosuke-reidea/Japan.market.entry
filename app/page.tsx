@@ -59,6 +59,8 @@ export default async function Page() {
   const data = await getNewsList({
     limit: TOP_NEWS_LIMIT,
   });
+  console.log("hello")
+  console.log(data)
 
   const services: ServiceItemProps[] = [
     {

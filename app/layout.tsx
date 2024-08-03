@@ -10,6 +10,7 @@ export const revalidate = 60;
 
 export async function generateMetadata(): Promise<Metadata> {
   const data = await getMeta();
+  console.log(data)
   if (!data) {
     return {};
   }
