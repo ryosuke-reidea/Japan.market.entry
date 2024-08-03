@@ -10,7 +10,7 @@ export default function NewsList({ articles }: Props) {
     return null;
   }
   if (articles.length === 0) {
-    return <p>記事がありません。</p>;
+    return <p>Ask for Free Consultation</p>;
   }
   return (
     <ul>

@@ -7,20 +7,17 @@ export default function Footer() {
       <nav className={styles.nav}>
         <ul className={styles.items}>
           <li className={styles.item}>
-            <Link href="/news">ニュース</Link>
+            <Link href="/news">Service</Link>
           </li>
           <li className={styles.item}>
-            <Link href="/members">メンバー</Link>
+            <Link href="/members">Company / Member</Link>
           </li>
           <li className={styles.item}>
-            <Link href="">採用情報</Link>
-          </li>
-          <li className={styles.item}>
-            <Link href="/contact">お問い合わせ</Link>
+            <Link href="/contact">Contact</Link>
           </li>
         </ul>
       </nav>
-      <p>© SIMPLE. All Rights Reserved 2023</p>
+      <p>© RE-IDEA Co.,Ltd. All Rights Reserved 2024</p>
     </footer>
   );
 }
