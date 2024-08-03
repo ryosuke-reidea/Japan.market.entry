@@ -7,7 +7,7 @@ export default function NotFound() {
       <Hero title="404" sub="Not Found" />
       <div className={styles.container}>
         <dl>
-          <dt className={styles.title}>ページが見つかりませんでした</dt>
+          <dt className={styles.title}>ページが見つかりませんでした！</dt>
           <dd className={styles.text}>
             あなたがアクセスしようとしたページは存在しません。
             <br />
