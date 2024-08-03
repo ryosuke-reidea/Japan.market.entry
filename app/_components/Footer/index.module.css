@@ -1,9 +1,10 @@
 .footer {
   padding: 16px 24px;
   text-align: center;
-  color: var(--color-text-sub);
+  color: white;
   font-size: 0.8rem;
-  margin-top: 80px;
+  margin-top: 20px;
+  background-color: black;
 }
 
 .nav {

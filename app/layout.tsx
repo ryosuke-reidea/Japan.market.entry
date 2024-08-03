@@ -23,6 +23,9 @@ export async function generateMetadata(): Promise<Metadata> {
       description: data.ogDescription,
       images: [data.ogImage?.url || ''],
     },
+    icons:{
+      icon:"/RE-IDEA_透明.png"
+    },
     alternates: {
       canonical: data.canonical,
     },

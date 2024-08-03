@@ -1,78 +1,137 @@
-.text {
-  text-align: center;
-  margin-bottom: 40px;
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px 20px;
 }
 
-.list {
+.aboutUs,
+.members {
+  margin-bottom: 60px;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.sectionSubtitle {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.mission {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.infoGrid {
+  display: grid;
+  gap: 0;
+  background-color: #f8f8f8;
+  padding: 2rem;
+  border-radius: var(--border-radius);
+}
+
+.infoGrid div {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 40px;
+  align-items: baseline;
+  padding: 1rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.companyNameRow {
+  grid-template-columns: auto !important;
+  grid-auto-flow: column;
+}
+
+.infoGrid dt {
+  font-weight: bold;
+}
+
+.infoGrid dd {
+  margin: 0;
+}
+
+.membersList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.memberItem {
   display: flex;
   align-items: flex-start;
   gap: 40px;
   margin-bottom: 80px;
 }
 
-.list:nth-child(even) {
+.memberItem:nth-child(even) {
   flex-direction: row-reverse;
 }
 
-.image {
+.memberImage {
   width: 240px;
   height: auto;
   border-radius: var(--border-radius);
 }
 
-.name {
+.memberInfo {
+  flex: 1;
+}
+
+.memberName {
   font-size: 1.2rem;
   font-weight: bold;
+  margin-bottom: 0.5rem;
 }
 
-.position {
-  margin-bottom: 8px;
+.memberPosition {
+  margin-bottom: 1rem;
 }
 
-.profile {
+.memberProfile {
   font-size: 0.9rem;
 }
 
-.footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-top: 1px solid var(--color-border);
-  padding-top: 40px;
-  text-align: center;
-  gap: 24px;
-}
-
-.message {
-  font-size: 2rem;
-  font-weight: bold;
-}
-
 .empty {
-  margin-bottom: 40px;
+  text-align: center;
+  margin-top: 2rem;
 }
 
-@media (max-width: 640px) {
-  .text {
-    text-align: left;
+@media (max-width: 768px) {
+  .infoGrid {
+    grid-template-columns: 1fr;
   }
 
-  .list {
-    display: flex;
+  .infoGrid div {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .companyNameRow {
+    grid-auto-flow: row;
+  }
+
+  .infoGrid dt {
+    margin-bottom: 0.5rem;
+  }
+
+  .memberItem,
+  .memberItem:nth-child(even) {
     flex-direction: column;
     align-items: center;
-    gap: 24px;
-  }
-
-  .list:nth-child(even) {
-    flex-direction: column;
-  }
-
-  .name {
     text-align: center;
   }
 
-  .position {
-    text-align: center;
+  .memberImage {
+    margin-bottom: 1rem;
   }
 }

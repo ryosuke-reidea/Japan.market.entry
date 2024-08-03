@@ -2,6 +2,7 @@
   display: flex;
   color: #fff;
   gap: 40px;
+  font-size: 1.2rem;
 }
 
 .button {

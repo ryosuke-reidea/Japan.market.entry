@@ -34,9 +34,9 @@ export default function ContactForm() {
   if (success) {
     return (
       <p className={styles.success}>
-        お問い合わせいただき、ありがとうございます。
+        Thank you for your inquiry.
         <br />
-        お返事まで今しばらくお待ちください。
+        We will reach you as soon as possible.
       </p>
     );
   }
@@ -45,38 +45,38 @@ export default function ContactForm() {
       <div className={styles.horizontal}>
         <div className={styles.item}>
           <label className={styles.label} htmlFor="lastname">
-            姓
+            First Name
           </label>
           <input className={styles.textfield} type="text" id="lastname" ref={lastnameRef} />
         </div>
         <div className={styles.item}>
           <label className={styles.label} htmlFor="firstname">
-            名
+            Family Name
           </label>
           <input className={styles.textfield} type="text" id="firstname" ref={firstnameRef} />
         </div>
       </div>
       <div className={styles.item}>
         <label className={styles.label} htmlFor="conpany">
-          会社名
+          Company Name
         </label>
         <input className={styles.textfield} type="text" id="company" ref={companyRef} />
       </div>
       <div className={styles.item}>
         <label className={styles.label} htmlFor="email">
-          メールアドレス
+          Mail Address
         </label>
         <input className={styles.textfield} type="text" id="email" ref={emailRef} />
       </div>
       <div className={styles.item}>
         <label className={styles.label} htmlFor="message">
-          メッセージ
+          Message
         </label>
         <textarea className={styles.textarea} id="message" ref={messageRef} />
       </div>
       <div className={styles.actions}>
         <p className={styles.error}>{error}</p>
-        <input type="submit" value="送信する" className={styles.button} />
+        <input type="submit" value="Submit" className={styles.button} />
       </div>
     </form>
   );
